@@ -62,8 +62,8 @@ $tech = $user_data['info']['tech']?$user_data['info']['tech']:'unknown';
       <div class="page" data-role="content" id="intro" data-theme="b">
         <form action="send_intro.php" method="post">
           <p>
-            My name is <input type="text" name="my_name" />
-            and my favourite technology is <input type="text" name="favourite_technology" />
+            My name is <input type="text" name="my_name" required />
+            and my favourite technology is <input type="text" name="favourite_technology" required />
           </p>
           <input type="submit" value="Yep, that's me" />
         </form>
@@ -161,7 +161,7 @@ $tech = $user_data['info']['tech']?$user_data['info']['tech']:'unknown';
     
     </section>
     
-    <script src="http://js.pusher.com/1.11/pusher.min.js"></script>
+    <script src="http://js.pusher.com/2.1/pusher.min.js"></script>
     <?php require_once('../js_globals.php'); ?>
     <script src="app.js"></script>
     <script src="../../assets/helpers/connection_state/connection-state.js"></script>

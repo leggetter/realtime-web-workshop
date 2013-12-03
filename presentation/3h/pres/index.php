@@ -27,7 +27,7 @@
 	<link rel="stylesheet" id="transition-theme-link" href="../../lib/deck.js/themes/transition/horizontal-slide.css">
 	<link rel="stylesheet" href="../../lib/snippet/jquery.snippet.min.css" type="text/css" />
 	
-	<link rel="stylesheet" href="http://pusher.github.com/pusher-realtime-chat-widget/src/pusher-chat-widget.css" type="text/css" />
+	<link rel="stylesheet" href="http://pusher.github.io/pusher-realtime-chat-widget/src/pusher-chat-widget.css" type="text/css" />
 	
 	<!-- Custom CSS just for this page -->
 	<link rel="stylesheet" href="../../assets/css/common.css">
@@ -41,10 +41,10 @@
 	
 	<script src="../../lib/deck.js/modernizr.custom.js"></script>
 	
-	<script src="http://js.pusher.com/1.12/pusher.min.js"></script>
+	<script src="http://js.pusher.com/2.1/pusher.min.js"></script>
   <script>window.Pusher || document.write('<script src="../../assets/js/pusher.min.js"><\/script>')</script>	
 	
-	<script src="http://pusher.github.com/pusher-realtime-chat-widget/src/js/PusherChatWidget.js"></script>
+	<script src="http://pusher.github.io/pusher-realtime-chat-widget/src/js/PusherChatWidget.js"></script>
 	<?php require_once('../js_globals.php'); ?>
 	<script>
 	  Pusher.log = function(msg) {
@@ -83,10 +83,10 @@
     }
 	</script>
 	
-	<link rel="stylesheet" href="http://pusher.github.com/html5-realtime-push-notifications/src/lib/gritter/css/jquery.gritter.css" type="text/css" />
+	<link rel="stylesheet" href="http://pusher.github.io/html5-realtime-push-notifications/src/lib/gritter/css/jquery.gritter.css" type="text/css" />
 	
-	<script src="http://pusher.github.com/html5-realtime-push-notifications/src/lib/gritter/js/jquery.gritter.min.js"></script>
-  <script src="http://pusher.github.com/html5-realtime-push-notifications/src/PusherNotifier.js"></script>
+	<script src="http://pusher.github.io/html5-realtime-push-notifications/src/lib/gritter/js/jquery.gritter.min.js"></script>
+  <script src="http://pusher.github.io/html5-realtime-push-notifications/src/PusherNotifier.js"></script>
 	<script>
   $(function() {
     var pusher = getPusher();
@@ -125,7 +125,6 @@
 * [Phil Leggetter](http://www.leggetter.co.uk)
 * [www.leggetter.co.uk](http://www.leggetter.co.uk)
 * [@leggetter](http://twitter.com/leggetter)    
-* Developer Evangelist at [Pusher](http://pusher.com)
 </section>
 
 <section class="slide markdown just-bullets smaller" id="overview">
@@ -143,12 +142,12 @@
 <section class="slide markdown just-bullets smaller" id="prerequisites">
 ## Pre-requisites
 
-* Laptop?
-* JavaScript + back-end dev skills in PHP, Ruby, node.js, ASP.NET or Python?
-* Web Server?
-* Browser with dev tools?
+* Computer/Laptop?
+* JavaScript + back-end dev skills in PHP
+* PHP Web Server
+* Browser with dev tools? Chrome, Firefox or recent Internet Explorer
 * **Pair up?**
-* Get the workshop files: [https://github.com/pusher/realtime-web-workshop](https://github.com/pusher/realtime-web-workshop)
+* Get the workshop files: [http://j.mp/fife-rtw-files](http://j.mp/fife-rtw-files) (zip download)
 
 </section>
 
@@ -285,7 +284,7 @@ ws.onclose = function(ev) {};
 ## Pusher JavaScript library
 
 <pre class="html">
-&lt;script src="http://js.pusher.com/1.12/pusher.min.js"&gt;&lt;/script&gt;
+&lt;script src="http://js.pusher.com/2.1/pusher.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
 var pusher = new Pusher( 'app_key' );
 
@@ -439,7 +438,7 @@ pusher.connection.bind( 'state_change', function( state ) {
 
 </section>
 
-<section class="slide markdown interact" id="twitter_subscribe_example">
+<<!-- section class="slide markdown interact" id="twitter_subscribe_example">
   
 <a href="http://youtu.be/Rsht7SNYQZU" class="demo-video"></a>  
   
@@ -495,7 +494,7 @@ function unsubscribe() {
   });
 }
 </script>
-</section>
+</section> -->
 
 <section class="slide markdown" id="subscribing_exercise">
 # Exercise 2: Subscribing  
@@ -597,7 +596,7 @@ function unsubscribe() {
 <a href="http://wordsquared.com"><img src="../../assets/images/word2_map.png" alt="Word2 Map" /></a>
 </section>
 
-<section class="slide markdown just-bullets interact" id="ghosts">
+<!-- <section class="slide markdown just-bullets interact" id="ghosts">
   
 <a href="http://youtu.be/rRwhbqNn7TY" class="demo-video"></a>
 
@@ -605,7 +604,7 @@ function unsubscribe() {
 
 <small><a href="https://ghosts.herokuapp.com">https://ghosts.herokuapp.com</a></small>
 
-</section>
+</section> -->
 
 <section class="slide markdown just-bullets nobg" id="publish_where">
 ## Where to publish/trigger events?
@@ -877,37 +876,6 @@ function removeMember(member) {
 }
 </script>
   </div>
-</section>
-
-<section class="slide markdown" id="webhooks_title">
-# WebHooks
-</section>
-
-<section class="slide markdown" id="webhooks_intro">
-## WebHooks
-
-* What's happening in Pusher with your app?
-* HTTP callbacks from Pusher to your web application
-* Channel existence
-  * `channel_occupied`
-  * `channel_vacated`
-* Presence events
-  * `member_added`
-  * `member_removed`
-* More?
-</section>
-
-<section class="slide markdown" id="queries_title">
-# Channel Queries
-</section>
-
-<section class="slide markdown just-bullets" id="queries_intro">
-## Channel Queries
-
-* Initial state when your app starts up
-* Is a channel occupied?
-* How many users are subscribed to a channel?
-* What users are subscribed to a presence channel?
 </section>
 
 <section class="slide markdown just-bullets smaller" id="future">

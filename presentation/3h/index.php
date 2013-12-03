@@ -13,7 +13,7 @@
 <body>
   <h1><?php echo(PRESENTATION_TITLE); ?></h1>
   <p>
-    If you have any feedback at all please <a href="mailto:phil@pusher.com">drop me an email</a> or <a href="http://twitter.com/leggetter">send me a tweet</a>.
+    If you have any feedback at all please <a href="mailto:phil@leggetter.com">drop me an email</a> or <a href="http://twitter.com/leggetter">send me a tweet</a>.
   </p>
 
   <ul>
