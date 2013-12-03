@@ -9,7 +9,7 @@ It's expected that you have basic JavaScript and a backend technology knowlege (
 ### Dev environment
 
 1. A text editor
-2. A web server - PHP, Ruby, Python, .NET, node.js *Note: Workshop uses PHP so if you choose to use your own backend tech there may be a bit of extra work required*
+2. A web server - PHP
 3. A web browser with developer tools
 4. Exercise files from: https://github.com/pusher/realtime-web-workshop
 

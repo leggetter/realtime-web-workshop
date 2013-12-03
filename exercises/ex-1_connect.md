@@ -14,12 +14,11 @@ If you don't mind signing up for a free Pusher Sandbox plan do so. It'll mean yo
 
 ### Include the Pusher script tag
 
-    <script src="http://js.pusher.com/1.12/pusher.min.js"></script>
+    <script src="http://js.pusher.com/2.1/pusher.min.js"></script>
 
 ### Create a new Pusher instance
        
-    // If you have your own account change the key below.
-    var pusher = new Pusher( '43549c6d4c7248a2f848' );
+    var pusher = new Pusher( 'TODO: Get this from Phil' );
 
 ### How do we know we're connected?
 

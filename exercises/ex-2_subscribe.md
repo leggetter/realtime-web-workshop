@@ -55,15 +55,3 @@ Test by executing the following in your JavaScript console:
 Fake the event using `channel.emit` and executing in the JavaScript console:
    
     Pusher.instances[0].channel('messages').emit('new_message', {text: 'Hello via the console again'} );
-         
-### Just for fun (if time)
-
-Create a new example that connects to Pusher and uses the `app_key` below:
-
-    a71b8d8b7eef0ef6d98c
-    
-If you subscribe to any channel with a `tw-` and bind to the `tweet` event you'll start receiving tweets.
-
-Use this to create your own little Twitter wall.
-
-Consider how the UI should behave when you subscribe to a channel like `tw-hello`. Twitter hasn't nailed this yet. It's difficult to get the UX correct.
